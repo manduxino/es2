@@ -1,0 +1,37 @@
+<html>
+    <head>
+<title>esercizio 2 daje</title>
+<h2>utilizzo di JQuery</h2>
+    </head>
+
+    <body style="background-color: grey;">
+
+    <!--creo una div con un id-->
+    <div id=div></div>
+
+    <!--creo lo script per JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!--apro un nuovo script-->
+    <script>
+
+// utilizzo $(#) per richiamare la variabile div
+$("#div").html("testo creato da script");
+
+//utilizzo l'append per aggiungere delle informazioni al body 
+$("body").append(
+
+//creo un bottone nel body e gli do un id e gli aggiungo una funzione 
+$("<button id='btn1'>bottone in JQuery</button>").click(function(){
+
+//cambio colore al div
+$("#div").attr("style", "background-color: red");
+//caambio il contenuto del div
+$("#div").html("cambio il testo dalla function del bottone");
+
+
+}));
+
+    </script>
+    </body>
+</html>
